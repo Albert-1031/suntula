@@ -1,0 +1,155 @@
+* {
+    /*讓所有加了margin padding區塊不會變形*/
+    /* box-sizing: border-box; */
+    font-family: 微軟正黑體;
+  }
+  .container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  body {
+    font-family: 'Roboto Mono', monospace;
+  background: rgb(255, 255, 255);
+  color:black;
+  }
+  a{
+    color: rgb(255, 255, 255);
+}
+  /*可滑動背景圖*/
+  h1 {
+    text-align: center;
+      /* font-size: 100px; */
+      font-weight: 900;
+      -webkit-text-stroke: 0.5px #fff; /*層疊樣式，寬度和顏色屬性*/
+      font-family: 'Montserrat', sans-serif;
+  }
+  p {
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  
+  .parallax {
+    /*背景圖*/
+    background: url(../images/20.jpg) center center no-repeat; /*設定背景圖片/居中/不重複*/
+    min-height: 560px; /*設定區塊高度*/
+    background-attachment: fixed; /*背景自動縮放/固定*/
+    background-size: cover; /*背景尺寸滿版，可移除測試*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  /*navbar*/
+a{
+  color: rgb(255, 255, 255);
+}
+
+
+ 
+/*nav*/
+.navbar{
+  background-color: rgba(0, 0, 0, 0.7);
+  /* opacity: 0.8; */
+}
+.nav-item{
+  text-align: center;
+}
+  
+  
+  /*h2標題*/
+  .sm-sign1 {
+    color: #48b2bc;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+  /*SAP Business One/QlikView*/
+  .sectioncenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+  }
+  .sectionsign,
+  .sectionimg,
+  .sectionContent {
+    width: 60%;
+  }
+  
+  .sectionContent {
+    margin: 20px;
+  }
+  .parallax>p{
+    color: rgb(255, 255, 255);
+  }
+  .sm-sign {
+    color: #f0be86;
+  }
+  /*footer*/
+.footer{
+  /* background-color: #011C40; */
+  border: 0.5px solid rgb(209, 223, 226);
+  /* display: flex;
+justify-content: center;
+  align-items: flex-end; */
+  padding: 20px;
+  font-size: 10px;
+}
+/*logo*/
+.foot1 img{
+height: 50px;
+}
+.foot2 p{
+margin-bottom: 0px;
+}
+
+.foot3{
+/* margin: 10px; */
+  width: 100%;
+  /* border: 2px solid white; */
+}
+.foot3>ul>li>a{
+  color: rgb(148, 148, 148);
+}
+.foot3 ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.foot3 ul li{
+  padding: 0 1% 0 1%;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: flex-end;
+  color: rgba(255,255,255,.2);
+}
+/*back to top 位置*/
+.foot4 {
+width: 100%;
+position: relative;
+}
+
+.return-btn {
+float: right;
+position: absolute;
+right: 3%;
+bottom: 1%;
+}
+.return-btn a {
+color: rgb(170, 106, 106);
+}
+  @media screen and (max-width: 800px) {
+    .sectionsign,
+    .sectionimg,
+    .sectionContent {
+      width: 100%;
+    }
+  }
+  

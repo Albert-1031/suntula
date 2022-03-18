@@ -1,0 +1,224 @@
+* {
+  /*讓所有加了margin padding區塊不會變形*/
+  box-sizing: border-box;
+  font-family: 微軟正黑體;
+}
+.container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+body {
+  background: black;
+}
+/*可滑動背景圖*/
+h1 {
+  text-align: center;
+	/* font-size: 100px; */
+	font-weight: 900;
+	-webkit-text-stroke: 0.5px #fff; /*層疊樣式，寬度和顏色屬性*/
+    font-family: 'Montserrat', sans-serif;
+}
+p {
+  color: white;
+}
+
+
+
+.parallax {
+  /*背景圖*/
+  background: url(../images/19.jpg) center center no-repeat; /*設定背景圖片/居中/不重複*/
+  min-height: 560px; /*設定區塊高度*/
+  background-attachment: fixed; /*背景自動縮放/固定*/
+  background-size: cover; /*背景尺寸滿版，可移除測試*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+/*nav*/
+.navbar{
+  background-color: rgb(0, 0, 0);
+  opacity: 0.8;
+}
+.nav-item{
+  text-align: center;
+}
+
+
+/*h2標題*/
+.sm-sign1 {
+  color: #f0be86;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+/*SAP Business One/QlikView*/
+.sectioncenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.sectionsign,.sectionimg,.sectionContent {
+  width: 60%;
+  padding: 20px;
+}
+
+.sectionContent {
+  margin: 20px;
+}
+.sm-sign {
+  color: #f0be86;
+}
+
+/*軟體包括*/
+/*軟體包括大區塊*/
+.soft {
+  /* border: solid 2px white; */
+  display: flex;
+  flex-direction: column;
+  margin: 15% 15%;
+}
+/*包所有icon圖文區塊*/
+.softzone {
+  display: flex;
+  flex-direction: column;
+  /* border: solid 2px white; */
+  align-items: center;
+  flex-wrap: wrap;
+}
+/*icon+文整列區塊*/
+.softzonerow {
+  /* border: solid 2px white; */
+  display: flex;
+  flex-wrap: wrap;
+}
+/*包icon圖文各區塊*/
+.smsoftzone {
+  display: flex;
+  /* border: solid 2px white; */
+  margin: 20px;
+  align-items: center;
+  flex: 1 1 300px;
+  background-color: rgba(255, 255, 255, 0.959);
+  border-radius: 10px;
+  padding: 10px;
+  /* box-shadow: 0px 0px 35px white; */
+}
+.icon,
+.softcontent {
+  margin: 2px;
+}
+.softcontent p{
+  color: black;
+}
+
+/*解決方案*/
+.sign {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.news-container {
+  margin: 15% 0%;
+  display: flex;
+  flex-direction: column;
+  /* border: 3px solid white; */
+  justify-content: center;
+}
+.section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.news {
+  /* border: 3px solid white; */
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  margin: 3.5%;
+}
+#newspic {
+  width: 100%;
+  height: 100%;
+}
+.news-img {
+  /* border: 3px solid white; */
+  min-height: 300px;
+  /* background-image: url(../images/1.jpg);
+    background-position: center;
+    background-size: cover; */
+}
+
+.news-content {
+  /* border: 3px solid white; */
+  min-height: 100px;
+  text-align: center;
+  margin: 10px;
+}
+
+/*footer*/
+.footer{
+  /* background-color: #011C40; */
+  border: 0.5px solid rgb(194, 231, 211);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 35vh;
+  justify-content: space-around;
+}
+/*logo*/
+.foot1{
+  margin: 1%;
+}
+.foot1 img{
+  border-radius: 5px;
+}
+/*文字置中*/
+.foot2{
+  text-align: center;
+}
+.foot3{
+  width: 100%;
+  /* border: 2px solid white; */
+}
+.foot3 ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.foot3 ul li{
+  padding:1%;
+}
+/*back to top 位置*/
+.foot4 {
+width: 100%;
+position: relative;
+}
+
+.return-btn {
+position: absolute;
+right: 3%;
+bottom: 1%;
+}
+.return-btn a{
+  color: rgba(245, 234, 234, 0.418);
+}
+ a {
+color: white;
+}
+@media screen and (max-width: 500px) {
+  .sectionsign,
+  .sectionimg,
+  .sectionContent {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .softzonerow1 {
+    width: 100%;
+  }
+}
